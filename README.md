@@ -1,3 +1,1 @@
-# Hunt
-
-hello
+echo # Hunt

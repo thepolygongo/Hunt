@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BestTimeLabels</key>
+	<array>
+		<string>Whitetail Deer</string>
+		<string>Black Bear</string>
+		<string>Hog</string>
+		<string>Turkey</string>
+	</array>
+	<key>AnimalLabels</key>
+	<array>
+		<string>Whitetail Deer</string>
+		<string>Black Bear</string>
+		<string>Hog</string>
+		<string>Turkey</string>
+		<string>Other</string>
+	</array>
+	<key>LabelImages</key>
+	<array>
+		<string>deerphotos2.png</string>
+		<string>blackbearphotos.png</string>
+		<string>hogphotos.png</string>
+		<string>turkeyphotos.png</string>
+		<string>otherphotos.png</string>
+	</array>
+	<key>LabelSummaries</key>
+	<array>
+		<string>Whitetail Deer Images</string>
+		<string>Black Bear Images</string>
+		<string>Hog Images</string>
+		<string>Turkey Images</string>
+		<string>Other Images</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j1y-V4-xli">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Share View Controller-->
+        <scene sceneID="ceB-am-kn3">
+            <objects>
+                <viewController id="j1y-V4-xli" customClass="ShareViewController" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="wbc-yd-nQP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="1Xd-am-t49"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEy-Cv-SGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="24.295774647887324"/>
+        </scene>
+        <!--Choose Camera Ctrl-->
+        <scene sceneID="Srp-jY-ad6">
+            <objects>
+                <viewController storyboardIdentifier="ChooseCameraCtrl" id="OoF-Mx-Lyl" customClass="ChooseCameraCtrl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5by-Ya-sP6"/>
+                        <viewControllerLayoutGuide type="bottom" id="b7N-0X-sf6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p5E-IG-MfC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUL-yw-HV2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a Camera" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2S-yQ-qye">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="42"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="6lp-1N-rMg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5JQ-eX-8eX">
+                                        <rect key="frame" x="8" y="16" width="40" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="tPo-bG-NRc"/>
+                                        </constraints>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="1" green="0.94117647059999998" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onClickBtnBack:" destination="OoF-Mx-Lyl" eventType="touchUpInside" id="UnZ-We-Bgb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="1sy-Uu-T1q"/>
+                                    <constraint firstItem="o2S-yQ-qye" firstAttribute="top" secondItem="ZUL-yw-HV2" secondAttribute="topMargin" id="5PL-1H-dgu"/>
+                                    <constraint firstItem="o2S-yQ-qye" firstAttribute="centerY" secondItem="5JQ-eX-8eX" secondAttribute="centerY" id="SGQ-TH-us3"/>
+                                    <constraint firstItem="5JQ-eX-8eX" firstAttribute="top" secondItem="ZUL-yw-HV2" secondAttribute="top" constant="16" id="amV-RH-C2i"/>
+                                    <constraint firstAttribute="trailing" secondItem="o2S-yQ-qye" secondAttribute="trailing" id="dOD-4d-9gr"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5JQ-eX-8eX" secondAttribute="trailingMargin" id="gtZ-cN-Ufj"/>
+                                    <constraint firstAttribute="bottom" secondItem="o2S-yQ-qye" secondAttribute="bottom" constant="-4" id="lw2-L8-0oi"/>
+                                    <constraint firstItem="o2S-yQ-qye" firstAttribute="leading" secondItem="ZUL-yw-HV2" secondAttribute="leading" id="qXn-J2-5hc"/>
+                                    <constraint firstItem="5JQ-eX-8eX" firstAttribute="leading" secondItem="ZUL-yw-HV2" secondAttribute="leadingMargin" id="wbg-VX-SlH"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VQN-6R-Se1">
+                                <rect key="frame" x="0.0" y="74" width="320" height="494"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CameraCell" rowHeight="100" id="xaX-9f-xLg" customClass="CameraCell">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xaX-9f-xLg" id="2ta-Cc-jvV">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpv-S0-ftG">
+                                                    <rect key="frame" x="0.0" y="25" width="320" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Fpv-S0-ftG" firstAttribute="leading" secondItem="2ta-Cc-jvV" secondAttribute="leading" id="1CY-Gl-3ZT"/>
+                                                <constraint firstItem="Fpv-S0-ftG" firstAttribute="centerY" secondItem="2ta-Cc-jvV" secondAttribute="centerY" id="Rie-Ea-qx5"/>
+                                                <constraint firstItem="Fpv-S0-ftG" firstAttribute="top" secondItem="2ta-Cc-jvV" secondAttribute="topMargin" constant="14" id="T1a-E0-Lby"/>
+                                                <constraint firstAttribute="trailing" secondItem="Fpv-S0-ftG" secondAttribute="trailing" id="lac-pB-DUU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="lblCameraName" destination="Fpv-S0-ftG" id="qy7-AA-Nk4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="OoF-Mx-Lyl" id="GPJ-Q7-DUd"/>
+                                    <outlet property="delegate" destination="OoF-Mx-Lyl" id="f48-jb-ASs"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VQN-6R-Se1" firstAttribute="top" secondItem="ZUL-yw-HV2" secondAttribute="bottom" constant="8" symbolic="YES" id="32X-wD-JHx"/>
+                            <constraint firstItem="VQN-6R-Se1" firstAttribute="bottom" secondItem="b7N-0X-sf6" secondAttribute="top" id="LRX-Wb-F86"/>
+                            <constraint firstAttribute="trailing" secondItem="ZUL-yw-HV2" secondAttribute="trailing" id="Ofr-py-gpd"/>
+                            <constraint firstItem="ZUL-yw-HV2" firstAttribute="leading" secondItem="p5E-IG-MfC" secondAttribute="leading" id="Ry3-Zh-zZO"/>
+                            <constraint firstItem="VQN-6R-Se1" firstAttribute="trailing" secondItem="ZUL-yw-HV2" secondAttribute="trailing" id="Z1x-Zg-24X"/>
+                            <constraint firstItem="VQN-6R-Se1" firstAttribute="leading" secondItem="ZUL-yw-HV2" secondAttribute="leading" id="dCE-4M-wE6"/>
+                            <constraint firstItem="ZUL-yw-HV2" firstAttribute="top" secondItem="p5E-IG-MfC" secondAttribute="top" id="hwA-aK-QGl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IlN-pY-yXV"/>
+                    </view>
+                    <connections>
+                        <outlet property="mTableView" destination="VQN-6R-Se1" id="sC8-yS-2Vo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQk-qh-cxp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="25.35211267605634"/>
+        </scene>
+    </scenes>
+</document>
